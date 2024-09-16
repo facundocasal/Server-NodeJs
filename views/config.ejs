@@ -1,0 +1,138 @@
+<%- include("./partials/head.ejs")   %>
+
+<body class="container">
+    <%- include("./partials/header.ejs")   %>
+    <h1> <%= title %></h1>
+    <div class="container bootstrap snippets bootdey">
+        <div class="panel-body inf-content">
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- <img alt="" style="width:600px;" title="" class="img-circle img-thumbnail isTooltip" src="https://bootdey.com/img/Content/avatar/avatar7.png" data-original-title="Usuario">  -->
+                    <img alt="" style="width:600px;" title="" class="img-circle img-thumbnail isTooltip" src="" data-original-title="Usuario">
+                </div>
+                <div class="col-md-6">
+                    <strong>Information</strong><br>
+                    <div class="table-responsive">
+                    <table class="table table-user-information">
+                        <tbody>
+                            <tr>        
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-asterisk text-primary"></span>
+                                        Base De Datos usada                                                
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    <%= config.database %>    
+                                </td>
+                            </tr>
+                            <tr>    
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-user  text-primary"></span>    
+                                        Usuario Mongo Atlas                                                
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    <%= config.mongoUser %>     
+                                </td>
+                            </tr>
+                            <tr>        
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-cloud text-primary"></span>  
+                                        contraseña Mongo Atlas                                              
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    <%= config.mongoPass %>  
+                                </td>
+                            </tr>     
+                            <tr>        
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-eye-open text-primary"></span> 
+                                        Nombre dataBase                                               
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    <%= config.dataBaseName %>
+                                </td>
+                            </tr>
+                            <tr>        
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-envelope text-primary"></span> 
+                                        Nodemailer Usuario                                              
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    <%= config.emailAdmin %> 
+                                </td>
+                            </tr>
+                            <tr>        
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                        nodemailer contraseña                                                
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    <%= config.emailPass %>
+                                </td>
+                            </tr>
+                            <tr>        
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                        JWT TOKEN secret                                                 
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    <%= config.tokenSecret %>
+                                </td>
+                            </tr>
+                            <tr>        
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                        PORT SOCKET                                                 
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    <%= config.portSocket %>
+                                </td>
+                            </tr>
+                            <tr>        
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                        USER ADMIN                                                  
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    <%= config.emailUserAdmin %>
+                                </td>
+                            </tr>
+                            <tr>        
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                        PASS USER ADMIN                                                
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    <%= config.passUserAdmin %>
+                                </td>
+                            </tr>                                     
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div> 
+        <%- include("./partials/scriptBtps.ejs") %>
+</body>
+
+</html>
