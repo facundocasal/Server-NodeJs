@@ -120,3 +120,7 @@ El proyecto utiliza las siguientes dependencias:
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Si tienes alguna sugerencia o mejora, por favor abre un issue o envía un pull request.
+
+### Autor
+
+[Facundo Nahuel Casal](https://github.com/facundocasal)
